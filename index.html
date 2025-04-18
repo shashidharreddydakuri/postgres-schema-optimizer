@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PostgreSQL Schema Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PostgreSQL Schema Optimizer</h1>
+        <div class="upload-section">
+            <input type="file" id="sqlFile" accept=".sql">
+            <label for="sqlFile" class="upload-label">
+                📁 Upload Schema SQL File
+            </label>
+        </div>
+        <div class="results">
+            <div class="original">
+                <h3>Original Schema</h3>
+                <pre id="originalContent"></pre>
+            </div>
+            <div class="optimized">
+                <h3>Optimized Schema</h3>
+                <pre id="optimizedContent"></pre>
+                <button onclick="copyToClipboard()" class="copy-btn">📋 Copy</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
